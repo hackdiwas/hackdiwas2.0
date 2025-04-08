@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .loading-text {
+            font-size: 3rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="loading-text" id="loading-text">Hello</h1>
+
+    <script>
+   const loadingText = document.getElementById('loading-text');
+const messages = ["नमस्ते", "Hello", "Bonjour", "Hola", "Hallo"];
+const displayTime = 5000; 
+const intervalTime = 200; 
+let index = 0;
+
+function updateLoadingText() {
+    loadingText.style.opacity = 0;
+    setTimeout(() => {
+        loadingText.textContent = messages[index];
+        loadingText.style.opacity = 1;
+        index++;
+        if (index === messages.length) {
+            clearInterval(interval);
+            setTimeout(() => window.location.href = "index.html", intervalTime);
+        }
+    }, 100);
+}
+
+const interval = setInterval(updateLoadingText, intervalTime);
+
+</script>
+</body>
+</html>
