@@ -219,13 +219,13 @@ nav {
   color: var(--secondary-color);
 }
 
-.nav__menu__btn {
+.nav_menu_btn {
   font-size: 1.5rem;
   color: var(--white);
   cursor: pointer;
 }
 
-.nav__action__btn {
+.nav_action_btn {
   display: none;
 }
 
@@ -243,7 +243,7 @@ nav {
   max-width: 700px;
 }
 
-.header__content .section__header {
+.header_content .section_header {
   font-size: 4rem;
   font-weight: 600;
   line-height: 5rem;
@@ -681,31 +681,25 @@ nav {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
 
-.about__content-1 .section__subheader::after {
+.about_content-1 .section_subheader::after {
   content: "01";
 }
 
-.about__content-2 .section__subheader::after {
+.about_content-2 .section_subheader::after {
   content: "02";
 }
 
-.about__content-3 .section__subheader::after {
+.about_content-3 .section_subheader::after {
   content: "03";
 }
-.about__content-4 .section__subheader::after {
+.about_content-4 .section_subheader::after {
   content: "04";
 }
-.about__content-5 .section__subheader::after {
+.about_content-5 .section_subheader::after {
   content: "05";
 }
-.about__content-6 .section__subheader::after {
+.about_content-6 .section_subheader::after {
   content: "06";
-}
-.about__content-7 .section__subheader::after {
-  content: "07";
-}
-.about__content-8 .section__subheader::after {
-  content: "08";
 }
 
 .about__content p {
@@ -936,21 +930,7 @@ nav {
 .card__content .sci{
   position: relative;
   bottom: 10px;
-  display: flex;/* ✅ Mobile Responsive (for screens below 768px) */
-@media (max-width: 768px) {
-  .team__container .card_Container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .card_Container .card {
-    width: 100%;
-    max-width: 300px;
-    height: 240px;
-  }
-}
-
+  display: flex;
 }
 
 .card__content .sci li{
@@ -971,6 +951,27 @@ nav {
   color: #fff;
   font-size: 20px;
 }
+/*  Mobile View: One card per row like screenshot */
+@media (max-width: 768px) {
+  .team__container .card_Container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card_Container .card {
+    width: 90%;  /* Take most of the screen width */
+    max-width: 320px;
+    height: auto;
+  }
+
+  .card .imbBx, .imbBx img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 
 
 .footer {
@@ -1055,11 +1056,11 @@ nav {
     background-color: transparent;
   }
 
-  .nav__menu__btn {
+  .nav_menu_btn {
     display: none;
   }
 
-  .nav__action__btn {
+  .nav_action_btn {
     justify-content: flex-end;
     display: flex;
     flex: 1;
