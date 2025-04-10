@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&display=swap');
+
+
+
+:root {
+    --primary-color: #040919;
+    --secondary-color: #e9c675;
+    --text-light: #cbd5e1;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Playfair Display", serif;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+  }
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background: url(background.jpg);
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+} 
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: rgb(255, 60, 60);
+}
+
+.section__container {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.secc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.credential_ipt {
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: var(--text-light);
+  padding: 0.75rem 2rem;
+  margin: 1rem;
+}
+
+.credential_ipt::placeholder {
+  text-align: center;
+}
+
+
+#verifyButton {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: 1px solid rgb(197, 197, 197);
+  outline-offset: 2px;
+  font-size: 1rem;
+  color: var(--text-light);
+  background-color: rgba(10, 30, 39, 0.5);
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#verifyButton:hover {
+  background-color: rgba(10, 30, 39, 1);
+  color: var(--white);
+}
+
+.result_info{
+  color: white;
+  font-size: 1rem;
+}
+
+
+.logo__img{
+  height: 4vw;
+  width: auto;
+  margin: 2rem;
+}
+
+.images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
