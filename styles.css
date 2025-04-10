@@ -948,6 +948,36 @@ nav {
   color: #fff;
   font-size: 20px;
 }
+/* Perfect Mobile View for Student Organizers Cards */
+@media (max-width: 768px) {
+  .team__container .card_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .card_Container .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    background-color: #1f1f1f;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card__content {
+    display: none; /* Hide hover content on mobile */
+  }
+}
+
 
 
 
