@@ -951,7 +951,7 @@ nav {
   color: #fff;
   font-size: 20px;
 }
-/*  Mobile View: One card per row like screenshot */
+
 @media (max-width: 768px) {
   .team__container .card_Container {
     flex-direction: column;
@@ -971,6 +971,7 @@ nav {
     object-fit: cover;
   }
 }
+
 
 
 
