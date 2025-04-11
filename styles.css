@@ -1121,7 +1121,7 @@ nav {
 
 p{
   text-wrap: pretty;
-  text-align: left;
+  text-align: justify;
   /* word-spacing:-2px; */
   /* hyphenation */
   hyphens: auto;
