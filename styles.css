@@ -675,7 +675,7 @@ nav {
 }
 
 .about__image img {
-  max-width: 400px;
+  max-width: 300px;
   margin-inline: auto;
   border-radius: 5px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
@@ -974,13 +974,14 @@ nav {
   .team__container .card_Container {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
   }
 
   .card_Container .card {
-    width: 100%;
+    /* width: 100%;
     max-width: 300px;
-    height: 240px;
+    height: 240px; */
+    aspect-ratio: 9 / 16;
   }
 }
 
@@ -1120,7 +1121,7 @@ nav {
 
 p{
   text-wrap: pretty;
-  text-align: justify;
+  text-align: left;
   /* word-spacing:-2px; */
   /* hyphenation */
   hyphens: auto;
@@ -1129,21 +1130,20 @@ p{
 }
 
 #final{
-  font-family: 'Overpass Mono', monospace;
+  /* font-family: 'Overpass Mono', monospace;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14px; */
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
   border-radius: 4px;
   transition: 0.5s;
   line-height: 1;
-  margin: 10px;
+  /* margin: 10px; */
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  /* background: #2176a0; */
-  background: #162c3f;
+  background-color: rgba(0, 0, 0, 0.534);
   border: 2px solid #e9c675;
   box-shadow: 15px 1px 150px 
 }
