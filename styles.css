@@ -704,6 +704,9 @@ nav {
 .about__content-7 .section__subheader::after {
   content: "07";
 }
+.about__content-8 .section__subheader::after {
+  content: "08";
+}
 
 
 .about__content p {
